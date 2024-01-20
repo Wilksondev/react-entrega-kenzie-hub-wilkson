@@ -14,8 +14,8 @@ export const LoginSection = ({ navigate, setUser }) => {
       setUser(data.user);
       navigate("/dashboard");
       toast.success("Login feito com sucesso.");
+      localStorage.setItem("@TOKEN", JSON.stringify(data.token));
     } catch (error) {
-      console.log(error);
       if (error.response.data.message === "Incorrect email / password combination") {
         toast.error("E-mail ou senha incorretos!");
       } if (error.response.data.message === "User not found") {

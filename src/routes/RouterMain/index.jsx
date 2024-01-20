@@ -13,6 +13,7 @@ export const RouterMain = () => {
 
     const userLogout = () => {
         setUser(null);
+        localStorage.clear();
         navigate("/");
     };
     return (

@@ -3,7 +3,7 @@ import { Input, InputPwd } from "../../forms";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { loginFormSchema } from "./loginForm.schema";
 
-export const LoginForm = ({ onSubmit, navigate }) => {
+export const LoginForm = ({ onSubmit}) => {
 
     const {
         register,

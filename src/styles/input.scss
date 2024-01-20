@@ -1,6 +1,7 @@
 .inputContainer {
     height: 48px;
-    width: 315px;
+    max-width: 390px;
+    width: 100%;
 
     background-color: var(--grey-2);
     color: rgba(134, 142, 150, 1);
@@ -12,4 +13,12 @@
 .inputContainer:hover {
     color: var(--grey-0);
     border-color: var(--grey-0);
+}
+
+@media (max-width: 425px) {
+    .inputContainer {
+        height: 42px;
+        max-width: 254px;
+        padding-left: 13px;
+    }
 }

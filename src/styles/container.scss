@@ -55,7 +55,8 @@
     align-items: center;
     gap: 22px;
 
-    width: 369px;
+    max-width: 369px;
+    width: 100%;
 
     border-radius: 4px;
     background: var(--grey-3, #212529);
@@ -66,18 +67,82 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 365px;
+    max-width: 369px;
+    width: 100%;
     gap: 22px;
 }
 
 .campContainer {
     display: flex;
     flex-direction: column;
+    max-width: 330px;
+    width: 100%;
     gap: 10px;
 }
 
 .topContainer {
     display: flex;
     justify-content: space-between;
-    width: 360px;
+    max-width: 390px;
+    width: 100%;
+}
+
+@media (max-width: 425px) {
+    @mixin flexRow($justify-conten: space-between) {
+        padding-inline: 5%;
+    }
+
+    @mixin flexColumm($justify-conten: space-between) {
+        padding-inline: 5%;
+    }
+
+    .headerConteiner {
+        @include flexRow;
+    }
+
+    .userContainer {
+        @include flexRow;
+    }
+
+    .contentContainer {
+        @include flexColumm($justify-conten: start);
+    }
+
+    .mainContainer {
+        padding: 81px 12px 50.916px 12px;
+        justify-content: center;
+        align-items: center;
+        gap: 19.393px;
+
+        & img {
+            width: 101px;
+        }
+    }
+
+    .standartContainer {
+        padding: 33.691px 17.648px;
+        gap: 22px;
+
+        max-width: 269px;
+        width: 100%;
+    }
+
+    .formContainer {
+        max-width: 265px;
+        width: 100%;
+        gap: 17.92px;
+    }
+    
+    .campContainer {
+        display: flex;
+        flex-direction: column;
+        max-width: 265px;
+        gap: 10px;
+    }
+    
+    .topContainer {
+        display: flex;
+        justify-content: space-between;
+        width: 265px;
+    }
 }
