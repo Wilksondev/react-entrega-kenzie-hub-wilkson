@@ -1,0 +1,74 @@
+%base {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 324px;
+    // width: 100%;
+    padding: auto;
+    gap: 10.152px;
+    flex-shrink: 0;
+    color: var(--white);
+}
+
+%min {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    max-width: 60px;
+    width: 100%;
+    padding: 0px, 16.24px, 0px, 16.24px;
+    gap: 10.15px;
+    flex-shrink: 0;
+    color: var(--white);
+}
+
+@mixin borders($border-color: var(--grey-3)) {
+    border-radius: 4.061px;
+    border: 1.218px solid;
+    border-color: $border-color;
+}
+
+@mixin backColor($background: var(--grey-3)) {
+    background: $background;
+}
+
+.buttonDefault {
+    @extend %base;
+    @include borders($border-color: var(--color-primary));
+    @include backColor($background: var(--color-primary));
+}
+
+.buttonDefault:hover {
+    @include borders($border-color: var(--color-primary-focus));
+    @include backColor($background: var(--color-primary-focus));
+}
+
+.buttonNegative {
+    @extend %base;
+    @include borders($border-color: var(--color-primary-negative));
+    @include backColor($background: var(--color-primary-negative));
+}
+
+.buttonDisable {
+    @extend %base;
+    @include borders($border-color: var(--grey-1));
+    @include backColor($background: var(--grey-1));
+}
+
+.buttonDisable:hover {
+    @include borders($border-color: var(--grey-2));
+    @include backColor($background: var(--grey-2));
+}
+
+.buttonDisableMin {
+    @extend %min;
+    @include borders($border-color: var(--grey-3));
+    @include backColor($background: var(--grey-3));
+}
+
+.buttonDisableMin:hover {
+    @include borders($border-color: var(--grey-2));
+    @include backColor($background: var(--grey-2));
+}

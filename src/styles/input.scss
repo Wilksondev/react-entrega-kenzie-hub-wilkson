@@ -1,0 +1,15 @@
+.inputContainer {
+    height: 48px;
+    width: 315px;
+
+    background-color: var(--grey-2);
+    color: rgba(134, 142, 150, 1);
+    border-radius: 4.061px;
+    border: 1.218px solid none;
+    padding-left: 17px;
+}
+
+.inputContainer:hover {
+    color: var(--grey-0);
+    border-color: var(--grey-0);
+}
