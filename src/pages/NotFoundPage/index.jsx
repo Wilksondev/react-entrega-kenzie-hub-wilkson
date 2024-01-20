@@ -1,9 +1,11 @@
+import style from "./style.module.scss";
+
 export const NotFoundPage = () => {
     return (
     <>
-    <main>
-        <h1>Error: 404</h1>
-        <p>Não foi possível encontrar a página!</p>
+    <main className={style.container}>
+        <h1 className="title1">Error: 404</h1>
+        <p className="paragraph">Não foi possível encontrar a página!</p>
     </main>
     </>
     );
