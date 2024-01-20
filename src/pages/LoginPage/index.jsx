@@ -1,12 +1,10 @@
-import { LoginSection } from "../../components"; 
-import { useNavigate } from "react-router-dom"; 
+import { LoginSection } from "../../components";
 
-export const LoginPage = () => {
-    const navigate = useNavigate();
+export const LoginPage = ({ navigate, setUser }) => {
 
     return (
-    <>
-     <LoginSection navigate={navigate}/>
-    </>
+        <>
+            <LoginSection navigate={navigate} setUser={setUser} />
+        </>
     )
 }; 

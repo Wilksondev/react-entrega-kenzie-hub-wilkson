@@ -1,10 +1,10 @@
 import { Header } from "../header";
 
-export const DefaultTemplate = ({children}) => {
+export const DefaultTemplate = ({ children, navigate }) => {
     return (
         <>
-        <Header />
-        {children}
+            <Header navigate={navigate} />
+            {children}
         </>
     );
 };

@@ -1,12 +1,10 @@
 import { RegisterSection } from "../../components";
-import { useNavigate } from "react-router-dom";
 
-export const RegisterPage = () => {
-    const navigate = useNavigate();
+export const RegisterPage = ({ navigate }) => {
 
     return (
-    <>
-     <RegisterSection navigate={navigate} />
-    </>
+        <>
+            <RegisterSection navigate={navigate} />
+        </>
     )
-};
+}; 

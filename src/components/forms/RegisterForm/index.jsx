@@ -65,11 +65,12 @@ export const RegisterForm = ({ onSubmit }) => {
                         {...register("course_module")}
                         className="inputContainer"
                     >
-                        <option value="Módulo 1">Módulo 1</option>
-                        <option value="Módulo 2">Módulo 2</option>
-                        <option value="Módulo 3">Módulo 3</option>
-                        <option value="Módulo 4">Módulo 4</option>
-                        <option value="Módulo 5">Módulo 5</option>
+                        <option value=""></option>
+                        <option value="Módulo 1 (Introdução ao FrontEnd).">Módulo 1</option>
+                        <option value="Módulo 2 (FrontEnd Avançado).">Módulo 2</option>
+                        <option value="Módulo 3 (Indrodução ao REACT e API's).">Módulo 3</option>
+                        <option value="Módulo 4 (Introdução ao BackEnd).">Módulo 4</option>
+                        <option value="Módulo 5 (BackEnd Avançado).">Módulo 5</option>
                     </select>
                 </div>
                 <button

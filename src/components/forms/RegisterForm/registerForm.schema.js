@@ -20,6 +20,9 @@ const registerFormSchema = z
         contact: z
             .string()
             .min(1, "Este campo é obrigatório."),
+        course_module: z
+            .string()
+            .min(1, "Este campo é obrigatório."),
     })
     .refine(({ password, confirmPassword }) => password === confirmPassword, {
         message: "As senhas não correspondem.",
