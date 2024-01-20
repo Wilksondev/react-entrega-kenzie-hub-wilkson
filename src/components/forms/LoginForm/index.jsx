@@ -2,7 +2,6 @@ import { useForm } from "react-hook-form";
 import { Input, InputPwd } from "../../forms";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { loginFormSchema } from "./loginForm.schema";
-import { useState } from "react";
 
 export const LoginForm = ({ onSubmit, navigate }) => {
 
