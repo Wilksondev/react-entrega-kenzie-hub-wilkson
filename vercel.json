@@ -1,7 +1,7 @@
 {
     "rewites": [
         {
-            "source": "/(.*)",
+            "source": "./(.*)",
             "destination": "index.html"
         }
     ]
