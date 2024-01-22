@@ -3,6 +3,7 @@
     flex-direction: row;
     justify-content: $justify-conten;
     padding-inline: 23%;
+    flex-wrap: wrap;
 }
 
 @mixin flexColumm($justify-conten: space-between) {
@@ -88,20 +89,18 @@
 }
 
 @media (max-width: 425px) {
-    @mixin flexRow($justify-conten: space-between) {
-        padding-inline: 5%;
-    }
-
     @mixin flexColumm($justify-conten: space-between) {
         padding-inline: 5%;
     }
 
     .headerConteiner {
-        @include flexRow;
+        padding-inline: 5%;
     }
 
     .userContainer {
-        @include flexRow;
+        padding-inline: 5%;
+        flex-direction: column;
+        gap: 10px;
     }
 
     .contentContainer {

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import kenzieHub from "../../assets/kenzieHub.svg";
 
 export const Header = ({ navigate, userLogout }) => {
@@ -5,12 +6,13 @@ export const Header = ({ navigate, userLogout }) => {
     <>
       <header className="headerConteiner">
         <img src={kenzieHub} alt="Kenzie hub"></img>
-        <button
+        <Link
           className="headlineBold buttonDisableMin"
           onClick={userLogout}
+          to="/"
         >
           Sair
-        </button>
+        </Link>
       </header>
     </>
   )

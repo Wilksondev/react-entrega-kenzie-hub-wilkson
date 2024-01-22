@@ -40,7 +40,7 @@
     @include backColor($background: var(--color-primary));
 }
 
-.buttonDefault:hover {
+.buttonDefault:hover {  
     @include borders($border-color: var(--color-primary-focus));
     @include backColor($background: var(--color-primary-focus));
 }

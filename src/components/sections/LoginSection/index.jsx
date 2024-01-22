@@ -2,6 +2,7 @@ import { toast } from "react-toastify";
 import kenzieHub from "../../../assets/kenzieHub.svg";
 import { API } from "../../../services/API";
 import { LoginForm } from "../../forms";
+import { Link } from "react-router-dom";
 
 export const LoginSection = ({ navigate, setUser }) => {
   const onSubmit = (payload) => {
@@ -36,13 +37,12 @@ export const LoginSection = ({ navigate, setUser }) => {
           >
             Ainda não possui uma conta?
           </p>
-          <button
+          <Link
             className="buttonDisable typoButton"
-            type="submit"
-            onClick={() => navigate("/register")}
+            to="/register"
           >
             Cadastre-se
-          </button>
+          </Link>
         </div>
       </section>
     </>

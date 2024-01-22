@@ -2,6 +2,7 @@ import { toast } from "react-toastify";
 import kenzieHub from "../../../assets/kenzieHub.svg";
 import { API } from "../../../services/API";
 import { RegisterForm } from "../../forms";
+import { Link } from "react-router-dom";
 
 export const RegisterSection = ({ navigate }) => {
   const onSubmit = (payload) => {
@@ -27,10 +28,10 @@ export const RegisterSection = ({ navigate }) => {
         <section className="mainContainer">
           <div className="topContainer">
             <img src={kenzieHub} alt="Kenzie hub"></img>
-            <button className="headlineBold buttonDisableMin" type="submit" onClick={() => navigate("/")}>Voltar</button>
+            <Link className="headlineBold buttonDisableMin" to="/">Voltar</Link>
           </div>
           <div className="standartContainer">
-            <h1 className="title1">Login</h1>
+            <h1 className="title1">Crie sua conta</h1>
             <RegisterForm onSubmit={onSubmit} />
           </div>
         </section>
